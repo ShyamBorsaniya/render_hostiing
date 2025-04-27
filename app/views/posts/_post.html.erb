@@ -10,7 +10,7 @@
   </p>
 
   <%= link_to "Share on WhatsApp",
-    "https://api.whatsapp.com/send?text=#{CGI.escape(post_url(@post))}",
+    "https://api.whatsapp.com/send?text=#{CGI.escape(post_url(post))}",
     target: "_blank",
     class: "btn btn-success" %>
 </div>
