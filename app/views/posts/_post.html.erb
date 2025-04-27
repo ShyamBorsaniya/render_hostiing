@@ -1,0 +1,16 @@
+<div id="<%= dom_id post %>">
+  <p>
+    <strong>Name:</strong>
+    <%= post.name %>
+  </p>
+
+  <p>
+    <strong>Author:</strong>
+    <%= post.author %>
+  </p>
+
+  <%= link_to "Share on WhatsApp",
+    "https://api.whatsapp.com/send?text=#{CGI.escape(post_url(@post))}",
+    target: "_blank",
+    class: "btn btn-success" %>
+</div>
